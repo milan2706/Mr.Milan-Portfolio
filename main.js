@@ -1,5 +1,5 @@
 
-// //-------Background Mouse Move Animation-------//
+//-------Background Mouse Move Animation-------//
 // document.addEventListener('DOMContentLoaded', () => {
 //     const interBubble = document.getElementById("intractID")
 
@@ -24,7 +24,7 @@
 
 //     move();
 // });
-// //-------Background Mouse Move Animation-------//
+//-------Background Mouse Move Animation-------//
 
 
 
