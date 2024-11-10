@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/cc513b0fb7.js" crossorigin="anonymous"></script>
     <style>
         body {
             background-color: #040f74;
+            height: 100vh;
         }
 
         nav .fa-solid {
@@ -57,6 +59,85 @@
         nav ul {
             padding-left: 0;
         }
+
+        .projects-container {
+            padding: 20px 10%;
+        }
+
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+            color: #fff;
+        }
+
+
+
+        .projects {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .projects img {
+            width: 85%;
+            border-radius: 10px;
+            display: block;
+            margin-top: 20px;
+            transition: transform 0.5s;
+        }
+
+
+        .projects-layer {
+            width: 90%;
+            height: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), #007ced);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            text-align: center;
+            font-size: 14px;
+            transition: height 0.5s;
+        }
+
+        .projects-layer h3 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .projects-layer a {
+            margin-top: 10px;
+            color: #007ced;
+            text-decoration: none;
+            font-size: 10px;
+            line-height: 40px;
+            background: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .projects:hover img {
+            transform: scale(1.1);
+        }
+
+        .projects:hover .projects-layer {
+            height: 100%;
+        }
+
+        .copyright-bottom p {
+            padding: 10px;
+
+        }
     </style>
 </head>
 
@@ -64,13 +145,13 @@
     <!--------Project Section Start----------------------->
     <div id="projects">
         <nav id="navbar">
-            <a href="#" class="logo"><span>Mr. </span>Milan</a>
+            <a href="#" class="logo"><span>Mil </span>An</a>
             <ul id="sidemenu">
-                <li><a href="#header"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#about"><i class="fa-solid fa-user-tie"></i>About</a></li>
-                <li><a href="#services"><i class="fa-solid fa-gear"></i>Known</a></li>
-                <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i>Projects</a></li>
-                <li><a href="#contact"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+                <li><a href="index.html#header"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="index.html#about"><i class="fa-solid fa-user-tie"></i>About</a></li>
+                <li><a href="index.html#services"><i class="fa-solid fa-gear"></i>Known</a></li>
+                <li><a href="index.html#portfolio"><i class="fa-solid fa-briefcase"></i>Projects</a></li>
+                <li><a href="index.html#contact"><i class="fa-solid fa-address-book"></i>Contact</a></li>
                 <i class="icn fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i id="mbtn" class="icn fa-solid fa-house" onclick="openmenu()"></i>
@@ -78,92 +159,92 @@
         <div class="projects-container">
             <!-- <h1 class="sub-title">Projects</h1> -->
             <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('app')">App</p>
-                <p class="tab-links" onclick="opentab('game')">Game</p>
-                <p class="tab-links" onclick="opentab('webgis')">Web GIS</p>
+                <p class="tab-links active-link" onclick="opentab('webgis')">Web GIS</p>
+                <p class="tab-links" onclick="opentab('app')">App</p>
+                <!-- <p class="tab-links" onclick="opentab('game')">Game</p> -->
             </div>
-            <div class="tab-contents active-tab" id="app">
+            <div class="tab-contents active-tab" id="webgis">
                 <div class="projects-list">
                     <div class="projects">
-                        <img src="image/bgp1.png">
+                        <img src="image/livelocationtracker2.png">
                         <div class="projects-layer">
-                            <h3>Social Media App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
+                            <h3>Live Location</h3>
+                            <p>This application Real Time Location Tracking.
                             </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="projects">
-                        <img src="image/bgp1.png">
+                        <img src="image/officelocator2.png">
                         <div class="projects-layer">
-                            <h3>Music App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
+                            <h3>Office Locator</h3>
+                            <p>This application for office locating and finding office branch.
                             </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="projects">
-                        <img src="image/bgp1.png">
+                        <img src="image/indiacensus2.png">
                         <div class="projects-layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
+                            <h3>India Census Data</h3>
+                            <p>This application using a choropleth map for visualizing India's Census record 2024.
                             </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="projects">
-                        <img src="image/bgp1.png">
+                        <img src="image/routingmapping2.png">
                         <div class="projects-layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
+                            <h3>Routing Mapping</h3>
+                            <p>Use For shortest root from arrival location to desstination location.
                             </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <img src="image/bgp1.png">
-                        <div class="projects-layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
-                            </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <img src="image/bgp1.png">
-                        <div class="projects-layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
-                            </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <img src="image/bgp1.png">
-                        <div class="projects-layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
-                            </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <img src="image/bgp1.png">
-                        <div class="projects-layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app contacts you the talented people around the world. Download it from play staore.
-                            </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-contents active-tab" id="game">
-
+            <div class="tab-contents" id="app">
+                <div class="projects-list">
+                    <div class="projects">
+                        <img src="image/texttospeach.png">
+                        <div class="projects-layer">
+                            <h3>Text To Speach</h3>
+                            <p>This application for text to speach.
+                            </p>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <img src="image/bgp1.png">
+                        <div class="projects-layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app contacts you the talented people around the world. Download it from play staore.
+                            </p>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <img src="image/bgp1.png">
+                        <div class="projects-layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app contacts you the talented people around the world. Download it from play staore.
+                            </p>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <img src="image/bgp1.png">
+                        <div class="projects-layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app contacts you the talented people around the world. Download it from play staore.
+                            </p>
+                            <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-contents active-tab" id="webgis">
+           
 
-            </div>
         </div>
         <div class="copyright-bottom">
             <a href="#" class="logo-2"><span>Mr. </span>Milan</a>
@@ -180,38 +261,7 @@
     </div>
     <!--------Project Section Start----------------------->
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-    <Script>
-        function openmenu() {
-            document.getElementById('sidemenu').style.right = '0';
-        }
-        function closemenu() {
-            document.getElementById('sidemenu').style.right = '-200px';
-        }
-        var mbtn = document.querySelector('#mbtn')
-        var sidemenu = document.querySelector('#sidemenu')
-
-        document.addEventListener('click', e => {
-            if (!sidemenu.contains(e.target) && e.target !== mbtn) {
-                document.getElementById('sidemenu').style.right = '-200px';
-            }
-        })
-    </Script>
+   <script src="main2.js"></script>
 </body>
 
 </html>
