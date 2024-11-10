@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.Milan WebGIS Developer | | Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/ttitlelogo2.png">
+    <title>Mr. Milan WebGIS Developer | | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -23,7 +24,7 @@
     <!---------Header Start----------------->
     <div id="header">
         <nav id="navbar">
-            <a href="#" class="logo"><span>Mr. </span>Milan</a>
+            <a href="#" class="logo"><span>Mil </span>An</a>
             <ul id="sidemenu">
                 <li><a href="#header"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#about"><i class="fa-solid fa-user-tie"></i>About</a></li>
@@ -36,10 +37,10 @@
         </nav>
         <div class="header-container">
             <div class="col-md-6 contact-header-left">
-                <img src="image/myphoto.png" alt="">
+                <img src="image/developerimage.png" alt="">
             </div>
             <div class="col-md-6 contact-header-right">
-                <p>Fullstack Web-GIS & RS Develeoper</p>
+                <p>Web-GIS & RS Develeoper</p>
                 <h1>Hi, My name is <span>Milan</span><br>I'm Passionate...</h1>
                 <h2>
                     < <i>code</i> >
@@ -71,10 +72,13 @@
                     <img src="image/pht.png">
                 </div>
                 <div class="col-lg-6 col-md-12 about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+                    <h1 class="sub-title">
+                        < / <span>About My Goal & Achivement</span> >
+                    </h1>
                     <p>My career objective is to lead a challenging career capitalized in the field of Geo-informatics
-                        and Remote Sensing where I can contribute my skills and knowledge for the growth of the
-                        organization as well as to improve my personal and professional skills and values</p>
+                        and Remote Sensing devlopment. I am passionate about where I can contribute my developing skills
+                        and knowledge for the growth of the
+                        organization as well as to improve my personal and professional skills and values.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -85,33 +89,34 @@
                         <div class="skill-container">
                             <div class="card1">
                                 <div class="circle">
-                                    <div class="counter"max-value="92">92%</div>
+                                    <div class="counter" max-value="50">50%</div>
                                 </div>
-                                <div class="label">UI/UX <br> Design</div>
+                                <div class="label" onclick="openCity(event, 'skill-row-1')">Web<br>Developement</div>
                             </div>
 
                             <div class="card1">
                                 <div class="circle">
                                     <div class="counter" max-value="83">83%</div>
                                 </div>
-                                <div class="label">Geospatial <br> Technology</div>
+                                <div class="label" onclick="openCity(event, 'skill-row-2')">Geospatial<br>Developement
+                                </div>
                             </div>
 
                             <div class="card1">
                                 <div class="circle">
                                     <div class="counter" max-value="78">78%</div>
                                 </div>
-                                <div class="label">Graphics <br>Design</div>
+                                <div class="label" onclick="openCity(event, 'skill-row-3')">Graphics <br>Designing</div>
                             </div>
 
                             <div class="card1">
                                 <div class="circle">
                                     <div class="counter" max-value="58">58%</div>
                                 </div>
-                                <div class="label">Android <br> App Development</div>
+                                <div class="label" onclick="openCity(event, 'skill-row-4')">2D/3D <br> Drawing</div>
                             </div>
                         </div>
-                        <div class="skill-row">
+                        <div class="tab-content1" id="skill-row-1">
                             <div class="skill-1">
                                 <div class="s-list">
                                     <div class="s-name">HTML</div>
@@ -126,24 +131,25 @@
                                     </div>
                                 </div>
                                 <div class="s-list">
+                                    <div class="s-name">React JS</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="85%" style="max-width: 85%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="skill-2">
+                                <div class="s-list">
                                     <div class="s-name">Java Script</div>
                                     <div class="s-bar">
-                                        <div class="sper" per="60%" style="max-width: 60%;"></div>
+                                        <div class="sper" per="70%" style="max-width: 70%;"></div>
                                     </div>
                                 </div>
                                 <div class="s-list">
                                     <div class="s-name">Python</div>
                                     <div class="s-bar">
-                                        <div class="sper" per="50%" style="max-width: 50%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-2">
-                                <div class="s-list">
-                                    <div class="s-name">OpenLayer</div>
-                                    <div class="s-bar">
-                                        <div class="sper" per="70%" style="max-width: 70%;"></div>
+                                        <div class="sper" per="80%" style="max-width: 80%;"></div>
                                     </div>
                                 </div>
                                 <div class="s-list">
@@ -152,33 +158,177 @@
                                         <div class="sper" per="80%" style="max-width: 80%;"></div>
                                     </div>
                                 </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-content1" id="skill-row-2">
+                            <div class="skill-1">
+                                <div class="s-list">
+                                    <div class="s-name">ArcGIS Pro</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="95%" style="max-width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">QGIS</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="85%" style="max-width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Erdas Imagine</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="60%" style="max-width: 60%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Envi</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="60%" style="max-width: 60%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="skill-2">
                                 <div class="s-list">
                                     <div class="s-name">Leaflet</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="90%" style="max-width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">OpenLayer</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="70%" style="max-width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Google Earth Engine</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="90%" style="max-width: 90%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-content1" id="skill-row-3">
+                            <div class="skill-1">
+                                <div class="s-list">
+                                    <div class="s-name">Photoshop CC</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="90%" style="max-width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Illustrator</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="75%" style="max-width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Experience Design</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="85%" style="max-width: 55%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="skill-2">
+                                <div class="s-list">
+                                    <div class="s-name">After Effects</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="70%" style="max-width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Figma</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="50%" style="max-width: 50%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Premiere Pro</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="60%" style="max-width: 60%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-content1" id="skill-row-4">
+                            <div class="skill-1">
+                                <div class="s-list">
+                                    <div class="s-name">Autocad 2022</div>
+                                    <div class="s-bar">
+                                        <div class="sper" per="40%" style="max-width: 40%;"></div>
+                                    </div>
+                                </div>
+                                <div class="s-list">
+                                    <div class="s-name">Blender</div>
                                     <div class="s-bar">
                                         <div class="sper" per="55%" style="max-width: 55%;"></div>
                                     </div>
                                 </div>
+
+                            </div>
+
+                            <div class="skill-2">
                                 <div class="s-list">
-                                    <div class="s-name">React JS</div>
+                                    <div class="s-name">Animate CC</div>
                                     <div class="s-bar">
-                                        <div class="sper" per="65%" style="max-width: 65%;"></div>
+                                        <div class="sper" per="50%" style="max-width: 50%;"></div>
                                     </div>
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>NeoGeoinfo</span><br>GIS Engineer</li>
-                            <li><span>Stesalit</span><br>GIS Executive</li>
-                            <li><span>Geovista</span><br>GIS Executive</li>
+                            <li><span>Geovista</span><br>GIS Executive <br>• Electric transmission network mapping on
+                                western part of Odisha in Tata Power Western Odisha Distribution Limited.
+                                <br>• Production, data QC, data finalization, data Maintain in GIS based native and
+                                web-based application.
+                                <br>• Team management, client Management.
+                            </li>
+                            <li><span>Stesalit</span><br>GIS Executive <br>• Electric transmission network mapping on
+                                Bangalore zone in Karnataka Power Transmission Corporation using GIS
+                                techniques and web-based application.
+                                <br>• Team Management, client handle.
+                                <br>• City Gas distribution network mapping on Maharashtra Natural Gas Limited.
+                                <br>• Productivity, map layout making, data finalization.
+                            </li>
+                            <li><span>NeoGeoinfo</span><br>GIS Engineer <br>• Property taxation management system.
+                                <br>• Production, data QC, data finalization, data Maintain in GIS based and web-based
+                                application.
+                                <br>• Precisely Geo-tagging each property under Uttar Pradesh Municipal Corporation
+                                through GIS mapping by using web-based and GIS based application.
+                            </li>
+
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Master of Science - Remote Sensing & GIS - 2022</span><br>Vidyasagar University
+                                <br> Project - Analysis of urban sprawl and its impact on Haldia Municipality area using
+                                Remote Sensing and GIS
+                                techniques. (2001- 2021)
+                                Techniques and Methods -using Change Detection Method (LULC, NDVI, LST and NDWI Change
+                                analysis, Urban
+                                sprawl direction analysis, Population growth analysis, Industrial impact and growth
+                                analysis)
                             </li>
-                            <li><span>Bachelor of Science - Geography - 2017</span><br>Vivekananda Mission Mahavidyalaya
+                            <li><span>Bachelor of Science - Geography - 2020</span><br>Vivekananda Mission Mahavidyalaya
+                            </li>
+                            <li><span>Higher Secondary 12TH- 2017</span><br>Baramritberia High School HS
+                            </li>
+                            <li><span>Matriculation 10TH - 2015</span><br>Baramritberia High School HS
                             </li>
                         </ul>
                     </div>
@@ -192,31 +342,33 @@
     <!-----------Services start------------>
     <div id="services">
         <div class="service-container">
-            <h1 class="sub-title">Expertise</h1>
+            <h1 class="sub-title">
+                < / <span>Known </span> >
+            </h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
-                    <p>Page Designimg for type</p>
-                    <a href="#">Learn more</a>
+                    <p>Frontend & Backend Developement.</p>
+                    <a href="#" onclick="getErrorr()">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Page Designimg for type</p>
-                    <a href="#">Learn more</a>
+                    <p>User Interface Design.</p>
+                    <a href="#" onclick="getErrorr()">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Web Design</h2>
-                    <p>Page Designimg for type</p>
-                    <a href="#">Learn more</a>
+                    <h2>Graphics Design</h2>
+                    <p>For Build Some Unique</p>
+                    <a href="#" onclick="getErrorr()">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store-ios"></i>
+                    <i class="fa-solid fa-earth-americas"></i>
                     <h2>Geospatial Technology</h2>
-                    <p>Page Designimg for type</p>
-                    <a href="#">Learn more</a>
+                    <p>Geo-information Visualization Using Application.</p>
+                    <a href="#" onclick="getErrorr()">Learn more</a>
                 </div>
             </div>
         </div>
@@ -226,42 +378,46 @@
     <!--------Portfoilio Section Start----------------------->
     <div id="portfolio">
         <div class="work-container">
-            <h1 class="sub-title">Projects</h1>
+            <h1 class="sub-title">
+                < / <span> Projects </span> >
+            </h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="image/bgp1.png">
+                    <img src="image/livelocationtracker2.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app contacts you the talented people around the world. Download it from play staore.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3> Live Location</h3>
+                        <p>This application Real Time Location Tracking.</p>
+                        <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/bgp1.png">
+                    <img src="image/officelocator2.png">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app contacts you the talented people around the world. Download it from play staore.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Office Locator</h3>
+                        <p>This application for office locating and finding office branch. </p>
+                        <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/bgp1.png">
+                    <img src="image/indiacensus2.png">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>The app contacts you the talented people around the world. Download it from play staore.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>India Census Data</h3>
+                        <p>This application using a choropleth map for visualizing India's Census record 2024.</p>
+                        <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/bgp1.png">
+                    <img src="image/routingmapping2.png">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>The app contacts you the talented people around the world. Download it from play staore.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Routing Mapping</h3>
+                        <p>Use For shortest root from arrival location to desstination location.</p>
+                        <a href="#" onclick="getError()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
             <a href="projects.html" class="btn">See More</a>
+            <!-- <button class="btn" onclick="getError()">See More</button> -->
+
         </div>
     </div>
     <!--------Portfoilio Section Start----------------------->
@@ -271,7 +427,9 @@
         <div class="contact-container">
             <div class="contact-row">
                 <div class="col-md-6 contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub-title">
+                        < / <span>Contact Me</span> >
+                    </h1>
                     <p><i class="fa-solid fa-paper-plane"></i>milandas27062000@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i>+91 7585884872 / 9733187989</p>
                     <P><i class="fa-solid fa-location-dot"></i>Bar Amritberia, Mirpur, Mahishadal, Purba
@@ -295,7 +453,7 @@
             </div>
         </div>
         <div class="copyright-bottom">
-            <a href="#" class="logo-2"><span>Mr. </span>Milan</a>
+            <a href="#" class="logo-2"><span>Mil </span>An</a>
             <div class="social-icons-2">
                 <a href="https://www.facebook.com/milandas.das.796?mibextid=ZbWKwL"><i
                         class="fa-brands fa-facebook"></i></a>
@@ -311,28 +469,7 @@
 
 
 
-    <!-----Background Animation Part Start---->
-    <!-- <div class="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                        result="goo" />
-                    <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-            </defs>
-        </svg>
-        <div class="gradients-container">
-            <div class="g1"></div>
-            <div class="g2"></div>
-            <div class="g3"></div>
-            <div class="g4"></div>
-            <div class="g5"></div>
-            <div id="intractID" class="interactive"></div>
-        </div>
-    </div> -->
-    <!-------Background Animation Part Start---- -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
