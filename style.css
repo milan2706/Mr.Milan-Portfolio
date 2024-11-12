@@ -472,10 +472,10 @@ nav.sticky ul {
   }
 
   100% {
-    --html_progress: calc(calc(75 / 100) * 360deg);
-    --css_progress: calc(calc(50 / 100) * 360deg);
-    --js_progress: calc(calc(25 / 100) * 360deg);
-    --py_progress: calc(calc(25 / 100) * 360deg);
+    --html_progress: calc(calc(50 / 100) * 360deg);
+    --css_progress: calc(calc(83 / 100) * 360deg);
+    --js_progress: calc(calc(78 / 100) * 360deg);
+    --py_progress: calc(calc(58 / 100) * 360deg);
   }
 }
 
@@ -983,5 +983,3 @@ form .btn2 {
 .projects:hover .projects-layer {
   height: 100%;
 }
-
-/********************Project Section End**********/
